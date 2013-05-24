@@ -28,10 +28,10 @@ exports.RealThermoStat = class RealThermoStat extends thermostat.ThermoStat
 
   constructor: () ->
     super("raspi.#{os.hostname()}")
-    @city = 'San Francisco'
-    @country = 'USA'
-    @lat  = @jitter_location(37.774929)
-    @long = @jitter_location(-122.419416)
+    @city = '東京都 港区'
+    @country = '日本'
+    @lat  = @jitter_location(35.6663268)
+    @long = @jitter_location(139.7310325)
 
   safe_keys: () ->
     keys = super
